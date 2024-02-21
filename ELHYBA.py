@@ -26,7 +26,7 @@ from pyrogram import (
     __version__ as v
 )
 
-ownerID = int("6157014093","6753126490")  
+ownerID = int("6753126490")  
 api_hash = Config.API_HASH 
 api_id = Config.APP_ID
 token = Config.TG_BOT_TOKEN 
