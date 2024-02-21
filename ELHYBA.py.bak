@@ -11,6 +11,7 @@ from pyrogram.errors import SessionPasswordNeeded, PhoneCodeExpired
 from pyrogram.errors.exceptions.bad_request_400 import PasswordHashInvalid
 from pyrogram.errors.exceptions.not_acceptable_406 import PhoneNumberInvalid
 from pyrogram.errors.exceptions.bad_request_400 import PhoneCodeInvalid
+#############################################################################
 from telethon import TelegramClient
 from telethon import __version__ as v2
 from telethon.sessions import StringSession
@@ -26,16 +27,17 @@ from pyrogram import (
     __version__ as v
 )
 
-ownerID = int("6157014093","6753126490")  
-api_hash = Config.API_HASH 
-api_id = Config.APP_ID
-token = Config.TG_BOT_TOKEN 
+#حقوق مارلو @H1HHIH - @MA_RL_O_W
+ownerID = int("6157014093") #ايدي الادمن 
+api_hash = Config.API_HASH #ايبي هاش 
+api_id = Config.APP_ID #ايبي ايدي
+token = Config.TG_BOT_TOKEN #البوت
 
 
 bot = Client(
   'bot'+token.split(":")[0],
-  20551716,
- '564355da021dc5739c01f33fb015eaf1', 
+  19312827, #ايبي ايدي
+ '84da7f08e87849853b2fa6728e4192a2', #ايبي هاش
   bot_token=token, in_memory=True
 )
 app = Client(
@@ -43,7 +45,8 @@ app = Client(
   api_id=api_id, api_hash=api_hash,
   bot_token=token, in_memory=True
 )
-
+#bot = app
+#app = bot
 
 STARTKEY = InlineKeyboardMarkup(
        [
@@ -376,7 +379,7 @@ async def on_Callback(c,m):
 
 
 
-
+#############################################################################
 
 @app.on_message(filters.command("start") & filters.private)
 async def start_msg(app, message):
@@ -406,7 +409,6 @@ async def generator_and_about(app,m):
       text += f"\n🔥 اصـدار بايروجرام {v}"
       text += f"\n🌱 اصـدار تـيـلـيـثـون {v2}"
       text += f"\n\n👤 مـطـور الـبـوت: @MA_RL_O_W"
-      text += f"\n\n\n👤 مبرمج السورس: @T_O_X4"
       await m.reply(text, quote=True)
 
     if m.text == "بـايـروجـرام":
