@@ -26,7 +26,7 @@ from pyrogram import (
     __version__ as v
 )
 
-ownerID = int("6753126490")  
+ownerID = int("6157014093")  
 api_hash = Config.API_HASH 
 api_id = Config.APP_ID
 token = Config.TG_BOT_TOKEN 
@@ -406,7 +406,6 @@ async def generator_and_about(app,m):
       text += f"\n🔥 اصـدار بايروجرام {v}"
       text += f"\n🌱 اصـدار تـيـلـيـثـون {v2}"
       text += f"\n\n👤 مـطـور الـبـوت: @MA_RL_O_W"
-      text += f"\n\n\n👤 مبرمج السورس: @T_O_X4"
       await m.reply(text, quote=True)
 
     if m.text == "بـايـروجـرام":
